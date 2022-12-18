@@ -71,7 +71,7 @@ class UserProfile(models.Model):
     twitter_profile = models.CharField(max_length=100)
     linkedin_profile = models.CharField(max_length=100)
     website = models.CharField(max_length=100)
-    phone = models.CharField(max_length=15);
+    phone = models.CharField(max_length=15)
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'

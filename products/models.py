@@ -8,3 +8,4 @@ class Products(models.Model):
     description = models.TextField()
     added = models.DateTimeField(auto_now_add=True)
     sold = models.BooleanField(default=False)
+    image = models.ImageField(upload_to='product-images',null=True)
